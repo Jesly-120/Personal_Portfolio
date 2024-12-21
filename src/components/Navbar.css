@@ -1,0 +1,129 @@
+/* Existing CSS */
+.header {
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    top: 0;
+    position: sticky;
+    z-index: 2000;
+    opacity: 0.9;
+  }
+  
+  .header_left {
+    flex: 0.4;
+  }
+  
+  .header_left > h1 {
+    text-align: center;
+    font-family: "Spicy Rice", serif;
+    padding: 2px 0;
+    font-weight: 200;
+  }
+  
+  .header_left > h1 > span {
+    color: #f64c08;
+  }
+  
+  .header_right {
+    display: flex;
+    flex: 0.6;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "Merriweather", serif;
+  }
+  
+  .header_right > a > h4 {
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 200ms ease-in-out;
+  }
+  
+  .header_right > a > h4:hover {
+    transform: scale(1.09);
+    color: #f64c08;
+  }
+  
+  .header__rightButton {
+    background-color: #f64c08;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: medium;
+    padding: 5px 20px;
+    transition: transform 200ms ease-in-out;
+  }
+  
+  .header__rightButton:hover {
+    transform: scale(1.09);
+    color: #f64c08;
+    background-color: #000000;
+  }
+  
+  /* Hamburger menu styling */
+  .hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;  /* Allows us to position it freely */
+  right: 20px;         /* Moves it to the right side */
+  top: 15px;           /* Aligns it vertically within the navbar */
+  z-index: 3000;   
+    
+  }
+  
+  .hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease;
+    
+  }
+  
+  .hamburger .bar.open {
+    background-color: #f64c08;
+    
+  }
+  
+  .header_right.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: black;
+    width: 100%;
+    align-items: center;
+    padding: 10px 0;
+    transition: max-height 0.3s ease-in-out;
+  }
+  
+  .header_right a {
+    margin: 10px 0;
+  }
+  
+  @media (max-width: 1200px) {
+    .header_right {
+      display: none;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  
+    .header_right.open {
+      display: flex;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .header_left > h1 {
+      font-size: 1.5rem;
+    }
+  
+    .header__rightButton {
+      font-size: small;
+    }
+  }
+  

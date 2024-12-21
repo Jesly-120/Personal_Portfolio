@@ -1,0 +1,99 @@
+.about__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Existing desktop styles */
+  .aboutme > h1 {
+    color: white;
+    flex: 0.6;
+    text-align: left;
+    max-width: 500px;
+    margin-top: 30px;
+    padding-top: 150px;
+    padding-left: 210px;
+  }
+  
+  .aboutme > p {
+    color: white;
+    text-align: left;
+    padding-left: 270px;
+    font-size: 25px;
+    width: 600px;
+  }
+  
+  .about_image {
+    text-align: center;
+    margin-right: 100px;
+  }
+  
+  .about_image > img {
+    flex: 0.4;
+    width: 600px;
+    height: 400px;
+    border-radius: 500px;
+    object-fit: contain;
+    margin-left: 60px;
+    margin-top: 180px;
+  }
+  
+  /* Responsive Design for Tablets (max-width: 1200px) */
+  @media (max-width: 1200px) {
+    .about__container {
+      flex-direction: row; /* Maintain row direction but adjust layout */
+      padding: 20px;
+    }
+  
+    .aboutme > h1 {
+      padding-left: 200px;
+      padding-top: 100px;
+      font-size: 28px;
+    }
+  
+    .aboutme > p {
+      padding-left: 230px;
+      font-size: 20px;
+      width: 450px;
+    }
+  
+    .about_image > img {
+      width: 400px;
+      height: 300px;
+      margin-left: 2px;
+      margin-top: 100px;
+    }
+  }
+  
+  /* Responsive Design for Mobile (max-width: 600px) */
+  @media (max-width: 600px) {
+    .about__container {
+      flex-direction: column; /* Stack content vertically */
+      padding: 10px;
+    }
+  
+    .aboutme > h1 {
+      text-align: center;
+      padding: 0;
+      padding-top: 50px;
+      font-size: 22px;
+    }
+  
+    .aboutme > p {
+      padding: 0;
+      text-align: center;
+      font-size: 16px;
+      width: 100%;
+      margin-top: 20px;
+    }
+  
+    .about_image > img {
+      width: 250px;
+      height: 250px;
+      margin: 20px 0;
+      padding-left: 100px;
+      border-radius: 30%;
+    }
+  }
+  

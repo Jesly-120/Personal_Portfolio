@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Manuale:ital,wght@0,300..800;1,300..800&family=Playwrite+DE+Grund:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.skillcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 200px 0;
+}
+
+.skillcontainer_text {
+    color: white;
+    flex: 0.6;
+    text-align: left;
+    max-width: 500px;
+    margin-top: 30px;
+}
+
+.skillcontainer_text > h2 {
+    font-size: 30px;
+}
+
+.skillcontainer_image {
+    flex: 0.4;
+    text-align: center;
+    margin-right: 100px;
+    position: center;
+    margin-top: 120px;
+}
+
+.skillcontainer_image > img {
+    width: 600px;
+    border-radius: 3px;
+    object-fit: contain;
+}
+
+.skillcontainer_skillset > h5 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 300;
+}
+
+.skillcontainer_slider > .css-lrbo11-MuiLinearProgress-root {
+    background-color: gray;
+}
+
+.skillcontainer_slider1 > span > .css-hud6bj-MuiLinearProgress-bar1 {
+    background-color: #FF9100;
+}
+
+.skillcontainer_slider2 > span > .css-hud6bj-MuiLinearProgress-bar1 {
+    background-color: #00CCDD;
+}
+
+.skillcontainer_slider3 > span > .css-hud6bj-MuiLinearProgress-bar1 {
+    background-color: #88D66C;
+}
+
+.skillcontainer_slider4 > span > .css-hud6bj-MuiLinearProgress-bar1 {
+    background-color: #C65BCF;
+}
+
+/* Responsive Design for Tablets (max-width: 1200px) */
+@media (max-width: 1200px) {
+    .skillcontainer {
+        flex-direction: column; /* Stack items vertically */
+        margin: 100px 0; /* Reduce margin */
+    }
+
+    .skillcontainer_image {
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 20px; /* Add bottom margin */
+        margin-top: 0; /* Adjust top margin */
+    }
+
+    .skillcontainer_image > img {
+        width: 80%; /* Adjust image width for tablet */
+        max-width: 500px; /* Limit max width */
+    }
+
+    .skillcontainer_text {
+        text-align: center; /* Center text */
+        margin-top: 0; /* Remove top margin */
+        max-width: 100%; /* Allow full width */
+    }
+
+    .skillcontainer_text > h2 {
+        font-size: 28px; /* Adjust font size */
+    }
+}
+
+/* Responsive Design for Mobile (max-width: 600px) */
+@media (max-width: 600px) {
+    .skillcontainer {
+        flex-direction: column; /* Stack items vertically */
+        margin: 50px 0; /* Further reduce margin */
+    }
+
+    .skillcontainer_image {
+        margin-bottom: 15px; /* Space below image */
+    }
+
+    .skillcontainer_image > img {
+        width: 90%; /* Adjust image width for mobile */
+        max-width: 300px; /* Limit max width */
+        border-radius: 50%;
+        padding-left: 2px;
+        margin-right: 1px;
+    }
+
+    .skillcontainer_text {
+        text-align: center; /* Center text */
+        max-width: 100%; /* Allow full width */
+    }
+
+    .skillcontainer_text > h2 {
+        font-size: 24px; /* Adjust font size */
+    }
+
+    .skillcontainer_skillset > h5 {
+        font-size: 18px; /* Smaller font size */
+    }
+}

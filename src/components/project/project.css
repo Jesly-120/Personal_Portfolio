@@ -1,0 +1,150 @@
+.projects-section {
+  padding: 50px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers the grid horizontally */
+  align-items: center; /* Centers the grid vertically if needed */
+  min-height: 100vh; /* Optional: Makes the section full height */
+  height: 100vh;   
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centers the grid items horizontally */
+  gap: 20px;
+  max-width: 1200px; /* Optional: Limits the width of the grid */
+}
+
+.project-card {
+  background-color: #CDC1FF;
+  padding: 5px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.4s;
+  height: 150px;
+}
+
+
+
+.project-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.project-image:hover{
+  transform: scale(1.09);
+}
+
+.project-title {
+  margin-top: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.project-title:hover {
+  color: #3498db;
+}
+
+.project-details {
+  font-size: 50px;
+  margin-top: 10px;
+  color: #000000;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.projects-heading {
+  font-size: 36px;
+  margin-bottom: 30px; /* Space between heading and project cards */
+  text-align: center;
+  color:white; /* Optional: Change heading color */
+}
+.project-title.transformed {
+  transform: scale(1.1); /* Scale up the title slightly when expanded */
+}
+.project-image.transformed {
+  transform: rotate(5deg); /* Rotate the image slightly when expanded */
+}
+
+section > h2{
+ font-size: 30px;
+  margin-top: 10px;
+  color: azure;
+}
+/* For tablets (max-width: 1200px) */
+@media (max-width: 1200px) {
+  .projects-grid {
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    max-width: 500px;
+    margin-right: 2px;
+  }
+
+  .project-card {
+    width: 800px; /* Reduce width for better display on tablets */
+    height: auto;
+  }
+
+  .project-image {
+    height: 350px;
+    width: 500px; /* Adjust image height for tablets */
+  }
+
+  section > h2 {
+    font-size: 28px;
+  }
+}
+
+/* For mobile (max-width: 600px) */
+@media (max-width: 600px) {
+  .projects-section {
+    padding: 20px 0;
+  }
+
+  .projects-grid {
+    flex-direction: column; /* Stack items vertically on mobile */
+    gap: 10px;
+  }
+
+  .project-card {
+    width: 95%; /* Make the card take full width on mobile */
+    height: auto;
+  }
+
+  .project-image {
+    height: 180px; 
+    width: 310px;/* Adjust image height for mobile */
+  }
+
+  .project-card h3, .project-card p {
+    font-size: 16px; /* Smaller font for mobile */
+  }
+
+  section > h2 {
+    font-size: 24px;
+  }
+}
+
+
+
+  
